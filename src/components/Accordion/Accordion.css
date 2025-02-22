@@ -1,0 +1,108 @@
+/* Base Styles */
+.accordion {
+
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .accordion-item {
+    margin-bottom: 8px;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px; /* Adjusted padding */
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+  }
+  
+  .accordion-header:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .accordion-header h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .accordion-icon {
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+  }
+  
+  .accordion-content {
+    padding: 0 16px; /* Start with 0 padding for smooth height transition */
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+  }
+  
+  /* Open State */
+  .accordion-item.open .accordion-header {
+    background-color: #e0e0e0;
+  }
+  
+  .accordion-item.open .accordion-icon {
+    transform: rotate(180deg);
+  }
+  
+  /* Bordered Variant */
+  .accordion.bordered .accordion-item {
+    border: 1px solid #e0e0e0;
+  }
+  
+  .accordion.bordered .accordion-header {
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  /* Minimal Variant */
+  .accordion.minimal .accordion-item {
+    background-color: transparent;
+    box-shadow: none;
+  }
+  
+  .accordion.minimal .accordion-header {
+    background-color: transparent;
+    padding: 12px 0;
+  }
+  
+  .accordion.minimal .accordion-content {
+    /* padding: 12px 0; */
+  }
+  
+  /* Flat Variant */
+  .accordion.flat .accordion-item {
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+    box-shadow: none;
+  }
+  
+  .accordion.flat .accordion-header {
+    background-color: #e22525;
+    color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .accordion.flat .accordion-content {
+    border-bottom: 1px solid #680000;
+  }
+  
+  .accordion.flat .accordion-item:last-child .accordion-header,
+  .accordion.flat .accordion-item:last-child .accordion-content {
+    border-bottom: none;
+  }
+
+  .custom{
+    display: flex;
+    justify-content: space-between; 
+  }
